@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+    <label>
+        Name:
+        <input formControlName="name" />
+    </label>
+    <label>
+        age:
+        <input type="number" formControlName="age" required />
+    </label>
+</form>
+
+<span> current form data: {{ form.value | json }} </span>
