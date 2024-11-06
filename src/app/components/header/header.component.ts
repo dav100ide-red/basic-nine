@@ -6,12 +6,23 @@ import { RouterLink } from '@angular/router';
     standalone: true,
     imports: [RouterLink],
     template: `
-        @for(link of links; track link){
-        <a [routerLink]="link.path">{{ link.label }}</a>
-        }
+        <nav>
+            @for(link of links; track link){
+            <a [routerLink]="link.path">{{ link.label }}</a>
+            }
+        </nav>
     `,
-    styles: ``,
+    styles: `
+    nav{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    `,
 })
 export class HeaderComponent {
-    public readonly links = [{ label: 'Data Binding', path: 'data-binding' }];
+    public readonly links = [
+        { label: 'Data Binding', path: 'data-binding' },
+        { label: 'ngIf and ngFor', path: 'show-hide-list' },
+    ];
 }

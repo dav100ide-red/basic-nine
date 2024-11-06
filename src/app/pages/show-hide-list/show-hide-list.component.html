@@ -1,1 +1,8 @@
-<p>show-hide-list works!</p>
+<button (click)="showList = !showList">
+    {{ showList ? "Nascondi" : "Mostra" }}
+    Lista
+</button>
+
+<ul *ngIf="showList">
+    <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>

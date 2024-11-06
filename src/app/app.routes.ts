@@ -8,4 +8,11 @@ export const routes: Routes = [
                 (m) => m.DataBidingComponent
             ),
     },
+    {
+        path: 'show-hide-list',
+        loadComponent: () =>
+            import('./pages/show-hide-list/show-hide-list.component').then(
+                (m) => m.ShowHideListComponent
+            ),
+    },
 ];
