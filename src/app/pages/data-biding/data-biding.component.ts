@@ -18,6 +18,6 @@ export class DataBidingComponent {
     private fb = inject(FormBuilder);
     form: FormGroup = this.fb.group({
         name: '',
-        age: [0],
+        age: 0,
     });
 }
