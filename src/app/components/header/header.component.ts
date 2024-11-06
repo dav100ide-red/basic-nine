@@ -24,5 +24,6 @@ export class HeaderComponent {
     public readonly links = [
         { label: 'Data Binding', path: 'data-binding' },
         { label: 'ngIf and ngFor', path: 'show-hide-list' },
+        { label: 'Parent to child & viceversa', path: 'parent-child' },
     ];
 }

@@ -15,4 +15,11 @@ export const routes: Routes = [
                 (m) => m.ShowHideListComponent
             ),
     },
+    {
+        path: 'parent-child',
+        loadComponent: () =>
+            import('./pages/parent-child/parent-child.component').then(
+                (m) => m.ParentChildComponent
+            ),
+    },
 ];
