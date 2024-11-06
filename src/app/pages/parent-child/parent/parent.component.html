@@ -1,4 +1,8 @@
 <div class="parent">
     Parent
-    <child />
+    <child
+        (childClick)="childClickCounter = childClickCounter + 1"
+        [message]="'string from parent'"
+    />
+    Child click counter: {{ childClickCounter }}
 </div>
