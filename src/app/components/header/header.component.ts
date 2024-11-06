@@ -25,5 +25,6 @@ export class HeaderComponent {
         { label: 'Data Binding', path: 'data-binding' },
         { label: 'ngIf and ngFor', path: 'show-hide-list' },
         { label: 'Parent to child & viceversa', path: 'parent-child' },
+        { label: 'Nested Router Outlet', path: 'nested-router-outlet' },
     ];
 }
