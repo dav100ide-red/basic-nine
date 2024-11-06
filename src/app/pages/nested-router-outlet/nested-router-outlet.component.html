@@ -1,7 +1,9 @@
 <div class="tabs-nav">
-    <a routerLink="tab1">Tab 1</a>
-    <a routerLink="tab2">Tab 2</a>
-    <a routerLink="tab3">Tab 3</a>
+    @for(tab of [1,2,3]; track $index){
+    <a [routerLink]="'tab/' + ($index + 1)" routerLinkActive="active">
+        Tab {{ $index + 1 }}
+    </a>
+    }
 </div>
 
 <router-outlet />

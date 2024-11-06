@@ -40,21 +40,7 @@ export const routes: Routes = [
                 pathMatch: 'full',
             },
             {
-                path: 'tab1',
-                loadComponent: () =>
-                    import(
-                        './pages/nested-router-outlet/components/tab/tab.component'
-                    ).then((m) => m.TabComponent),
-            },
-            {
-                path: 'tab2',
-                loadComponent: () =>
-                    import(
-                        './pages/nested-router-outlet/components/tab/tab.component'
-                    ).then((m) => m.TabComponent),
-            },
-            {
-                path: 'tab3',
+                path: 'tab/:id',
                 loadComponent: () =>
                     import(
                         './pages/nested-router-outlet/components/tab/tab.component'
