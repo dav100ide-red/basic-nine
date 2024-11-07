@@ -54,9 +54,10 @@ import { RouterModule } from '@angular/router';
     gap: 1.5rem;
 
     @media (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* Create three columns */
+        align-items: center;
+         text-align: left;
     }
   }
 
@@ -75,6 +76,7 @@ import { RouterModule } from '@angular/router';
   &__social {
     display: flex;
     gap: 1rem;
+    justify-self: end; // for grid
 
     a {
       color: #333; // Dark text for readability
