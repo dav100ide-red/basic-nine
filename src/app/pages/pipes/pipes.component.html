@@ -1,8 +1,8 @@
 <p>{{ user | json }}</p>
 <div>
-    <h2>{{ user.name | uppercase }}</h2>
+    <h2>lowercase name: {{ user.name | lowercase }}</h2>
     <p>Date of Birth: {{ user.dob | date : "MMMM d, y" }}</p>
-    <p>Email: {{ user.email | lowercase }}</p>
+    <p>uppercase Email: {{ user.email | uppercase }}</p>
     <p>Balance: {{ user.balance | currency : "USD" }}</p>
     <p>Age: {{ user.dob | age }}</p>
 </div>
