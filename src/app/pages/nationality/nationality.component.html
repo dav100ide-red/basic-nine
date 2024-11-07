@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="submitName()">
+    <label>
+        Name:
+        <input formControlName="name" />
+    </label>
+    <button type="submit">submit</button>
+</form>
+winner: {{ winner$ | async }}

@@ -58,6 +58,11 @@ export const routes: Routes = [
             ),
     },
     {
+        path: 'nationality',
+        loadComponent: () =>
+            import('./pages/nationality/nationality.component'),
+    },
+    {
         path: '**',
         loadComponent: () =>
             import('./pages/not-found/not-found.component').then(
