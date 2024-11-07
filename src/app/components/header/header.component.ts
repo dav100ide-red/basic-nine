@@ -26,5 +26,6 @@ export class HeaderComponent {
         { label: 'ngIf and ngFor', path: 'show-hide-list' },
         { label: 'Parent to child & viceversa', path: 'parent-child' },
         { label: 'Nested Router Outlet', path: 'nested-router-outlet' },
+        { label: 'Pipes', path: 'pipes' },
     ];
 }

@@ -48,4 +48,11 @@ export const routes: Routes = [
             },
         ],
     },
+    {
+        path: 'pipes',
+        loadComponent: () =>
+            import('./pages/pipes/pipes.component').then(
+                (m) => m.PipesComponent
+            ),
+    },
 ];
