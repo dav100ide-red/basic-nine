@@ -33,7 +33,7 @@ import { RouterModule } from '@angular/router';
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2024 YourBrand. All rights reserved.</p>
+                <p>&copy; 2024 Forza Napoli. All rights reserved.</p>
             </div>
         </footer>
     `,

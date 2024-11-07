@@ -35,11 +35,11 @@ export const routes: Routes = [
                 './pages/nested-router-outlet/nested-router-outlet.component'
             ).then((m) => m.NestedRouterOutletComponent),
         children: [
-            {
-                path: '',
-                redirectTo: 'tab1',
-                pathMatch: 'full',
-            },
+            // {
+            //     path: '',
+            //     redirectTo: 'tab/1',
+            //     pathMatch: 'full',
+            // },
             {
                 path: 'tab/:id',
                 loadComponent: () =>
