@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { checkTabIdResolver } from './resolvers/check-tab-id.resolver';
 
 export const routes: Routes = [
     {
@@ -45,6 +46,7 @@ export const routes: Routes = [
                     import(
                         './pages/nested-router-outlet/components/tab/tab.component'
                     ).then((m) => m.TabComponent),
+                resolve: { id: checkTabIdResolver },
             },
         ],
     },

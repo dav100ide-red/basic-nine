@@ -1,3 +1,15 @@
 <h5>Il componente TAB prende l'id dinamico dall'url</h5>
+@if(id){
 
 <em> L'ID TAB è {{ id }} </em>
+}@else {
+<em>
+    Spiacente, hai passato {{ id }}, ma gli ID consentiti sono i seguenti
+    <ul>
+        @for(id of allowedIds; track id ){
+        <li>{{ id }}</li>
+        }
+    </ul>
+</em>
+
+}

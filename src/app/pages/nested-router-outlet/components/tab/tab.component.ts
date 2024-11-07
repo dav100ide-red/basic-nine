@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ALLOWED_TAB_IDS } from '../../../../resolvers/check-tab-id.resolver';
 
 @Component({
     selector: 'tab',
@@ -8,5 +9,6 @@ import { Component, Input } from '@angular/core';
     styleUrl: './tab.component.scss',
 })
 export class TabComponent {
-    @Input({ required: true }) id!: string;
+    @Input({ required: true }) id: string | null = null;
+    public readonly allowedIds = ALLOWED_TAB_IDS;
 }
