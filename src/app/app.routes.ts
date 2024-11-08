@@ -63,6 +63,10 @@ export const routes: Routes = [
             import('./pages/nationality/nationality.component'),
     },
     {
+        path: 'scss',
+        loadComponent: () => import('./pages/scss/scss.component'),
+    },
+    {
         path: '**',
         loadComponent: () =>
             import('./pages/not-found/not-found.component').then(

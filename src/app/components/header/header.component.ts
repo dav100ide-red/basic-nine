@@ -28,5 +28,6 @@ export class HeaderComponent {
         { label: 'Nested Router Outlet', path: 'nested-router-outlet' },
         { label: 'Pipes', path: 'pipes' },
         { label: 'Nationality', path: 'nationality' },
+        { label: 'SCSS', path: 'scss' },
     ];
 }
